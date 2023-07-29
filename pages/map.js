@@ -167,10 +167,11 @@ export default function Map({ data }) {
         </p>
         <div className="flex flex-wrap justify-center mb-4">
           <Badge
-            disable={selectedTags.size == 0 ? true : false}
             content={
               filteredUsers.length > 0 ? filteredUsers.length : users.length
             }
+          badgeClassName={"translate-x-1.5 -translate-y-3"}
+            
           >
             <Button
               onClick={resetFilter}
